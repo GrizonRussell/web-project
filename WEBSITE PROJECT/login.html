@@ -140,19 +140,16 @@
     </div>
 
     <script>
+        function redirectToSignupPage() {
+            window.location.href = "signup.html";
+        }
+    
         function performLogin() {
             alert("Please fill out the form."); // Placeholder alert, replace with actual logic
         }
-
+    
         function toggleSignupForm() {
-            var loginForm = document.getElementById("loginForm");
-            var signupForm = document.getElementById("signupForm");
-
-            // Hide the login form
-            loginForm.style.display = "none";
-
-            // Show the signup form
-            signupForm.style.display = "flex";
+            redirectToSignupPage();
         }
     </script>
 </body>
